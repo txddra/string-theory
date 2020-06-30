@@ -79,23 +79,36 @@ result = result + num;
 
 
 
-const ciEmailify = function(str){
-  for(let i =0; i<str.length; i++){
-    let result= "";
-if(str[i]===" "){
-result = result + ".";
+// const ciEmailify = function(str){
+//   for(let i =0; i<str.length; i++){
+//     let result= "";
+// if(str[i]===" "){
+// result = result + ".";
+
+// }
+// else{result = result + str[i].toLowerCase()
+
+// }
+
+// }
+//   return result + '@codeimmersives.com'
+
+// }
+
+const ciEmailify = function(name){
+
+
+let answer = '';
+for (let i = 0; i < name.length; i++){
+  if(name[i] === ' '){
+    answer = answer + '.';
+  }else {
+    answer = answer + name[i];
+  }
+}
+return answer.toLowerCase() + '@codeimmersives.com';
 
 }
-else{result = result + str[i].toLowerCase()
-
-}
-
-  
-  return result + '@codeimmersives.com'
-}
-}
-
-
 const reverse = function(str){
   let reversed = "";    
   for (let i = str.length - 1; i >= 0; i--){        
