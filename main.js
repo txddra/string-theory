@@ -2,7 +2,17 @@
  * YOUR CODE HERE *
  ******************/
 
+const indexedChars =function(str){
+  //keep count
+  let result = "";
+for(let i = 0; i < str.length; i++){
+  //perfect copy of the string
+result +=  i + str[i]
+}
 
+
+  return result
+}
 
 
 
