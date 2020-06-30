@@ -41,8 +41,8 @@ for(let i = 0; i < str.length; i++){
 const repeatIt = function(str, num){
   let result ='';
 
-  for(let i = 0; i < str.length; i++){
- return  result += str  
+  for(let i = 0; i < num; i++){
+ result += str  
  
   }
 return result
@@ -65,11 +65,11 @@ const truncate = function(str){
 //grab original number
 let num = str[i]
 //if it's more than 15, add ellipsis 
-    if(i > 15){
-result += result + "...";
+    if(i == 15  && str.length > 18){
+return result + "...";
 
     }
-    else if(i < 15 || i > 18){
+    else if(i < 15 || i <= 18){
 result = result + num;
     }
   }
@@ -104,7 +104,15 @@ const reverse = function(str){
   return reversed;
 }
 
+const onlyVowels = function(str){
+  for(let i = 0; i < str.length; i++){
+    let reuslt= "";
+    let strA = str[i]
+    if(strA=== "a" || strA=== "e"){
 
+    }
+  }
+}
 
 
 
