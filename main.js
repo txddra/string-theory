@@ -38,6 +38,15 @@ for(let i = 0; i < str.length; i++){
   return result;
 }
 
+const repeatIt = function(str, num){
+  let result ='';
+
+  for(let i = 0; i < str.length; i++){
+ return  result += str  
+ 
+  }
+return result
+}
 
 
 
@@ -47,6 +56,55 @@ for(let i = 0; i < str.length; i++){
 
 // }
 // console.log(result)
+
+const truncate = function(str){
+  //make an empty string for the result
+  let result= "";
+  //loop through the original string
+  for(let i = 0; i < str.length; i++){
+//grab original number
+let num = str[i]
+//if it's more than 15, add ellipsis 
+    if(i > 15){
+result += result + "...";
+
+    }
+    else if(i < 15 || i > 18){
+result = result + num;
+    }
+  }
+  return result;
+
+}
+
+
+
+const ciEmailify = function(str){
+  for(let i =0; i<str.length; i++){
+    let result= "";
+if(str[i]===" "){
+result = result + ".";
+
+}
+else{result = result + str[i].toLowerCase()
+
+}
+
+  
+  return result + '@codeimmersives.com'
+}
+}
+
+
+const reverse = function(str){
+  let reversed = "";    
+  for (let i = str.length - 1; i >= 0; i--){        
+    reversed += str[i];
+  }    
+  return reversed;
+}
+
+
 
 
 
