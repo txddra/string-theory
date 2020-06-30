@@ -11,12 +11,42 @@ result +=  i + str[i]
 }
 
 
-  return result
+  return result;
+}
+
+const exclaim = function(str){
+  let result ='';
+for(let i = 0; i < str.length; i++){
+  if(str[i]=== '?'){
+
+    result += '!'
+
+  }
+  else if (str[i]==="."){
+    result += "!"
+
+  }
+  else{
+    result = result + str[i]
+
+  }
 }
 
 
 
 
+  return result;
+}
+
+
+
+
+// const repeatIt(){
+//   let result="";
+
+
+// }
+// console.log(result)
 
 
 
