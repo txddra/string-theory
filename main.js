@@ -97,7 +97,6 @@ result = result + num;
 
 const ciEmailify = function(name){
 
-
 let answer = '';
 for (let i = 0; i < name.length; i++){
   if(name[i] === ' '){
@@ -109,25 +108,74 @@ for (let i = 0; i < name.length; i++){
 return answer.toLowerCase() + '@codeimmersives.com';
 
 }
+
+
 const reverse = function(str){
   let reversed = "";    
   for (let i = str.length - 1; i >= 0; i--){        
-    reversed += str[i];
+    reversed =reversed + str[i];
   }    
   return reversed;
 }
 
 const onlyVowels = function(str){
   for(let i = 0; i < str.length; i++){
-    let reuslt= "";
+    //make a new string for the result
+    let result= "";
+//plug the string at index i into a variable
     let strA = str[i]
-    if(strA=== "a" || strA=== "e"){
+//plug the vowels used into variables
+    let vowels ="aeiou";
+    
+//if statement calling out all vowels
+    if(strA === vowels || strA=== vowelsCap){
 
+     vowels
+     }else {
+    return result.toLowerCase()
+}
+       }
     }
+
+// const onlyVowels =function(char) {
+//   switch(char.toLowerCase()) {
+//     case 'a':
+//       return "a"
+//     case 'e':
+//       return "e"
+//     case 'i':
+//       return "i"
+//     case 'o':
+//       return "o"
+//     case 'u':
+//       return "u"
+// //     case "y":
+// // return char
+//    default :
+//    return char.toLowerCase()
+//   }
+// }
+
+
+// const numberedChars = function(str){
+//   let result='';
+//   for(let i =0; i< str.length; i++){
+// if(str[i]){
+// return
+// }
+//   }
+
+
+//   return result;
+
+// }
+
+const crazyCase = function(str){
+  for(let i = 0; i <str.length; i++){
+
+
   }
 }
-
-
 
  /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
